@@ -49,6 +49,7 @@ public class ReproductorDeMusica {
 					cancion.setCantidadEscuchada(cancion.getCantidadEscuchada()+1);
 					usuario.agregarCancionEscuchada(cancion);
 					cancion.recalcularCategoria();
+					resultado=ResultadoDeReproduccion.CANCION_ESCUCHADA;
 				}
 				break;
 			case GRATUITO:

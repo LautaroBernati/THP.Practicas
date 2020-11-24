@@ -24,6 +24,6 @@ public class TestEj3 {
 		System.out.println(reproductor1.escucharCancion("pepito@mail.com", "Procura", "ChiChi Peralta"));
 		System.out.println(reproductor1.escucharCancion("pepito@mail.com", "Procura", "ChiChi Peralta"));
 		//FINITO.
+		reproductor1.listarCancionesPorUsuario("lautaro@mail.com");
 	}
-
 }

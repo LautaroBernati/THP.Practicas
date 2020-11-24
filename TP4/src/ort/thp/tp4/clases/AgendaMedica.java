@@ -11,10 +11,11 @@ public class AgendaMedica {
 		ArrayList<Paciente> ausentes=new ArrayList<Paciente>();
 		Paciente paciente=null;
 		int i=0;
-		while(i<this.turnos.size() && paciente==null){
+		while(i<this.turnos.size()){
 			if(this.turnos.get(i).estaPresente()==false){
 				paciente=this.turnos.get(i).getPaciente();
 				ausentes.add(paciente);
+				paciente=null;//resetea
 			}
 			i++;
 		}
