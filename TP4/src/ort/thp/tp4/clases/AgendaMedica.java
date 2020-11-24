@@ -9,15 +9,10 @@ public class AgendaMedica {
 	
 	public ArrayList<Paciente> obtenerAusentes(){
 		ArrayList<Paciente> ausentes=new ArrayList<Paciente>();
-		Paciente paciente=null;
-		int i=0;
-		while(i<this.turnos.size()){
-			if(this.turnos.get(i).estaPresente()==false){
-				paciente=this.turnos.get(i).getPaciente();
-				ausentes.add(paciente);
-				paciente=null;//resetea
+		for(Turno turno:this.turnos){
+			if(turno.estaPresente()==false){
+				ausentes.add(turno.getPaciente());
 			}
-			i++;
 		}
 		return ausentes;
 	}

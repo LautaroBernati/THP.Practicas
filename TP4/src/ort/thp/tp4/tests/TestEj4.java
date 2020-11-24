@@ -16,7 +16,7 @@ public class TestEj4 {
 		System.out.println(agenda1.darPresente("11111111"));
 		System.out.println("Pacientes Ausentes:"+agenda1.obtenerAusentes());
 		agenda1.listarTurnos();
-		System.out.println(agenda1.anularTurno("11111111"));
+		System.out.println(agenda1.anularTurno("22222222"));
 		agenda1.listarTurnos();
 		//FUNCTIONAL.
 	}
