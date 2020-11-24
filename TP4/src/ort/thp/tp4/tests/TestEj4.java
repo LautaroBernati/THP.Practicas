@@ -11,6 +11,8 @@ public class TestEj4 {
 		System.out.println(agenda1.registrarTurno("11111111", "Lautaro", "Bernati", "1122225555"));
 		System.out.println(agenda1.registrarTurno("11111111", "Lautaro", "Bernati", "1122225555"));
 		System.out.println(agenda1.registrarTurno("22222222", "Pepito", "Pepon", "1133335555"));
+		System.out.println(agenda1.registrarTurno("22222223", "Pepito", "Pepon", "1133335555"));
+		System.out.println(agenda1.registrarTurno("22222224", "Pepito", "Pepon", "1133335555"));
 		//agenda1.listarTurnos();
 		System.out.println("Pacientes Ausentes:"+agenda1.obtenerAusentes());
 		System.out.println(agenda1.darPresente("11111111"));
